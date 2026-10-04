@@ -1,1 +1,142 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09152b">
+  <meta name="description" content="Exchange with confidence at Waris Khoshal Exchange & Money Service. Explore indicative rates and convert Afghan afghani to the currencies you need.">
+  <title>Waris Khoshal Exchange | Trusted Money Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot" aria-hidden="true"></span>
+    Here for your next move. Personal service, every time.
+  </div>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Waris Khoshal Exchange home">
+        <img src="8792C954-C98F-46B1-921F-DC4601EEA891.png" alt="" class="brand-mark">
+        <span class="brand-copy"><strong>WARIS KHOSHAL</strong><small>EXCHANGE &amp; MONEY SERVICE</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#rates">Exchange rates</a>
+        <a href="#about">Why Waris Khoshal</a>
+        <a href="#how-it-works">How it works</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-line"></span> YOUR MONEY, MOVING WITH PURPOSE</span>
+          <h1>Currency exchange,<br><em>made personal.</em></h1>
+          <p class="hero-description">From the Afghan afghani to the world’s leading currencies, make your next exchange with confidence and a real person on your side.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#rates">Explore exchange rates <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-icon" aria-hidden="true">✳</div>
+            <div><strong>A better way to exchange</strong><span>Clear guidance. Personal service.</span></div>
+          </div>
+        </div>
+        <aside class="converter-card" aria-labelledby="converter-title">
+          <div class="converter-heading">
+            <div><span class="card-kicker">QUICK CONVERTER</span><h2 id="converter-title">Make a quick estimate</h2></div>
+            <span class="live-indicator"><span></span> Indicative</span>
+          </div>
+          <p class="converter-note">See what your money could look like in another currency.</p>
+          <label class="field-label" for="send-amount">You send</label>
+          <div class="currency-field">
+            <input id="send-amount" type="number" min="0" step="any" value="1000" inputmode="decimal" aria-label="Amount to convert">
+            <label class="select-wrap" for="send-currency">
+              <span class="currency-symbol" id="send-symbol">؋</span>
+              <select id="send-currency" aria-label="Currency to convert from"></select>
+              <span class="select-chevron" aria-hidden="true">⌄</span>
+            </label>
+          </div>
+          <button class="swap-button" type="button" aria-label="Swap currencies"><span aria-hidden="true">↕</span></button>
+          <label class="field-label" for="receive-currency">They receive <span class="approx-label">Estimated amount</span></label>
+          <div class="currency-field receive-field">
+            <output id="receive-amount" for="send-amount send-currency receive-currency">—</output>
+            <label class="select-wrap" for="receive-currency">
+              <span class="currency-symbol" id="receive-symbol">$</span>
+              <select id="receive-currency" aria-label="Currency to convert to"></select>
+              <span class="select-chevron" aria-hidden="true">⌄</span>
+            </label>
+          </div>
+          <div class="rate-footnote"><span class="lock-icon" aria-hidden="true">◇</span><span id="rate-description">Indicative estimate only. Confirm your rate with our team.</span></div>
+          <a class="button button-dark" href="#contact">Ask us about this exchange <span aria-hidden="true">→</span></a>
+          <p class="estimate-disclaimer">Rates are indicative and for information only. Final rates may vary.</p>
+        </aside>
+      </div>
+      <div class="hero-bottom-rule" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="rates-section section-pad" id="rates">
+      <div class="section-heading">
+        <div><span class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> A WORLD OF CURRENCY</span><h2>Popular exchange rates</h2></div>
+        <p>Explore popular currencies against the Afghan afghani. Ask our team for a current, personalized quote.</p>
+      </div>
+      <div class="rates-grid" id="rates-grid" aria-live="polite"></div>
+      <p class="rates-disclaimer"><span aria-hidden="true">ⓘ</span> These indicative rates are for illustrative purposes only and are not a live offer. Rates may change. Contact us to confirm today’s exchange rate and availability.</p>
+    </section>
+
+    <section class="trust-section" id="about">
+      <div class="trust-inner">
+        <div class="trust-copy">
+          <span class="eyebrow"><span class="eyebrow-line"></span> SERVICE THAT PUTS YOU FIRST</span>
+          <h2>It’s your money.<br><em>We make it personal.</em></h2>
+          <p>Exchanging currency shouldn’t feel complicated. We’re here to make the process clearer, more considered, and built around what matters to you.</p>
+          <a class="text-link" href="#contact">Talk with our team <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="trust-points">
+          <article class="trust-point"><span class="point-number">01</span><div><h3>People, not guesswork</h3><p>Get guidance from our team when you need it—not just a number on a screen.</p></div><span class="point-icon" aria-hidden="true">↗</span></article>
+          <article class="trust-point"><span class="point-number">02</span><div><h3>Clarity at every step</h3><p>Understand your options with straightforward information before you exchange.</p></div><span class="point-icon" aria-hidden="true">◇</span></article>
+          <article class="trust-point"><span class="point-number">03</span><div><h3>Service that travels with you</h3><p>Support for personal and business currency exchange, tailored to your needs.</p></div><span class="point-icon" aria-hidden="true">✳</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps-section section-pad" id="how-it-works">
+      <div class="steps-heading"><span class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> SIMPLE BY DESIGN</span><h2>A few easy steps.</h2><p>Start a conversation and we’ll help you take it from there.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><span>01</span><div class="step-icon" aria-hidden="true">⌕</div><h3>Tell us what you need</h3><p>Share the currencies and amount you have in mind.</p></article>
+        <article class="step-card"><span>02</span><div class="step-icon" aria-hidden="true">↔</div><h3>Get a clear quote</h3><p>Our team will confirm the latest rate and walk you through the details.</p></article>
+        <article class="step-card"><span>03</span><div class="step-icon" aria-hidden="true">✳</div><h3>Exchange with confidence</h3><p>When you’re ready, we’ll help make your exchange straightforward.</p></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <div><span class="eyebrow"><span class="eyebrow-line"></span> LET’S MAKE YOUR NEXT MOVE</span><h2>Have a currency in mind?</h2><p>Get in touch for today’s rates and personal assistance.</p></div>
+        <a class="button button-gold" href="mailto:info@wariskhoshal.com?subject=Currency%20exchange%20enquiry">Start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand footer-brand" href="#home" aria-label="Waris Khoshal Exchange home">
+        <img src="8792C954-C98F-46B1-921F-DC4601EEA891.png" alt="" class="brand-mark">
+        <span class="brand-copy"><strong>WARIS KHOSHAL</strong><small>EXCHANGE &amp; MONEY SERVICE</small></span>
+      </a>
+      <p>Personal service for a world in motion.</p>
+      <a href="mailto:info@wariskhoshal.com">info@wariskhoshal.com <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="footer-bottom"><span>© <span id="current-year"></span> Waris Khoshal Exchange &amp; Money Service</span><span>Indicative rates shown for information only. Please confirm your rate before exchanging.</span></div>
+  </footer>
+</body>
+</html>
